@@ -50,8 +50,10 @@ class Test_Reg(unittest.TestCase):
             # Ваш код, который заполняет обязательные поля
             input1 = browser.find_element_by_css_selector("div.first_block .first")
             input1.send_keys("Ivan")
-            input2 = browser.find_element_by_css_selector("div.first_block .third")
-            input2.send_keys("Smolensk")
+            input2 = browser.find_element_by_css_selector("div.first_block .second")
+            input2.send_keys("Petrov")
+            input3 = browser.find_element_by_css_selector("div.first_block .third")
+            input3.send_keys("Smolensk")
 
             # Отправляем заполненную форму
             button = browser.find_element_by_css_selector("button.btn")
